@@ -20,7 +20,7 @@
 
 **type**: `function (data: string, parent: Instance?, ...: any)`
 
-**description**: creates a LocalScript in `parent`. it also passes the varargs to the client for easy one-time replication (don't pass functions or other non-replicateable types & classes due to security reasons). has no timeout.
+**description**: creates a LocalScript in `parent`. it also passes the varargs to the client for easy one-time replication (passed functions or other non-replicateable types & classes wont work due to security reasons). it also has no timeout.
 
 **aliases**: `newLocalScript`, `NewLocalScript`, `nLS`, `NLS`
 
