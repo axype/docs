@@ -18,7 +18,7 @@
 
 ### `runnerId` [number](https://create.roblox.com/docs/reference/engine/classes/number)
 
-**type**: `number?`
+**type**: `number | nil`
 
 **description**: equivalent to the server's `owner.UserId`
 
