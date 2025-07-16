@@ -10,7 +10,7 @@
 
 ### `owner` [Player?](https://create.roblox.com/docs/reference/engine/classes/Player)
 
-**type**: `userdata`
+**type**: `userdata | nil`
 
 **description**: represents the user that ran the paste in-game, can be nil. internally, axype uses the second argument passed to the loader function to determine the owner (said argument can be a **case-insensitive username**, **userid**, **userdata** that returns a valid result when indexed with `Name`, or **Player** instance)
 

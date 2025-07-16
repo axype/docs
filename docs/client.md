@@ -10,13 +10,13 @@
 
 ### `owner` [Player](https://create.roblox.com/docs/reference/engine/classes/Player)
 
-**type**: `userdata`
+**type**: `userdata | nil`
 
 **description**: the **LocalPlayer**
 
 ---
 
-### `runnerId`
+### `runnerId` [number](https://create.roblox.com/docs/reference/engine/classes/number)
 
 **type**: `number?`
 
@@ -24,9 +24,9 @@
 
 ---
 
-### `runner`
+### `runner` [Player?](https://create.roblox.com/docs/reference/engine/classes/Player)
 
-**type**: `Player?`
+**type**: `userdata | nil`
 
 **description**: equivalent to the server's `owner`
 
