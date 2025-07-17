@@ -12,7 +12,7 @@
 
 **type**: `userdata | nil`
 
-**description**: the **LocalPlayer**
+**description**: the **LocalPlayer**.
 
 ---
 
@@ -20,7 +20,7 @@
 
 **type**: `number | nil`
 
-**description**: equivalent to the server's `owner.UserId`
+**description**: equivalent to the server's `owner.UserId`.
 
 ---
 
@@ -28,7 +28,7 @@
 
 **type**: `userdata | nil`
 
-**description**: equivalent to the server's `owner`
+**description**: equivalent to the server's `owner`.
 
 ---
 
