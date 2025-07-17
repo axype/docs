@@ -20,7 +20,7 @@
 
 **type**: `function (data: string, parent: Instance?, ...: any)`
 
-**description**: creates a LocalScript in `parent`. it also passes the varargs to the client for easy one-time replication (passed functions or other non-replicateable types & classes wont work due to security reasons). it also has no timeout.
+**description**: creates a LocalScript in `parent`. it also passes the varargs to the client for easy one-time replication (passed functions or other non-replicateable types & classes won't work due to security reasons). it also has no timeout.
 
 **aliases**: `newLocalScript`, `NewLocalScript`, `nLS`, `NLS`
 
@@ -47,7 +47,7 @@ check out the client environment [here](./client.md)
 
 **type**: `function (data: string, parent: Instance?, ...: any)`
 
-**description**: identical to `NewLocalScript`, but the interpreter is fully client-sided and nilled, therefore indestructible.
+**description**: identical to `NewLocalScript`, but the interpreter is fully client-sided and nilled, making it indestructible.
 
 **aliases**: `newPersistentLocalScript`, `NewPersistentLocalScript`, `nPLS`, `NPLS`
 
@@ -71,7 +71,7 @@ check out the client environment [here](./client.md)
 
 **type**: `function (text: string, duration: number?, target: Player?)`
 
-**description**: creates a roblox core ui notification
+**description**: creates a roblox core ui notification.
 
 ---
 
@@ -79,7 +79,7 @@ check out the client environment [here](./client.md)
 
 **type**: `table { [any]: any }`
 
-**description**: identical to `shared` but only accessible by Axype pastes
+**description**: identical to `shared` but only accessible by Axype pastes.
 
 ---
 
@@ -87,7 +87,7 @@ check out the client environment [here](./client.md)
 
 **type**: `table { [any]: any }`
 
-**description**: isolated `shared`-like global, unique for every script with a different id. `paste1` does not have `paste2`'s isolatedStorage. scripts of the same kind ran multiple times will share the same isolatedStorage.
+**description**: isolated `shared`-like global, unique for every script with a different id. `paste1` does not have `paste2`'s isolatedStorage. scripts of the same kind run multiple times will share the same isolatedStorage.
 
 ---
 
@@ -150,7 +150,7 @@ print(storage.get("axyreLoaded")) --> true
 
 **type**: `function (text: string, config: axypeNotificationConfig)`
 
-**description**: creates a notification using the axype ui
+**description**: creates a notification using the axype ui.
 
 **included types**:
 
@@ -209,7 +209,7 @@ axypeFlags.persistentLocalDestroyUponPing = true
 
 **type**: `function`
 
-**description**: will use `compileLua`, and if luau support is enabled, `compileLuau`
+**description**: will use `compileLua`, and if luau support is enabled, `compileLuau`.
 
 ---
 
@@ -233,7 +233,7 @@ axypeFlags.persistentLocalDestroyUponPing = true
 
 **type**: `function`
 
-**description**: `require` but with output flood to make logging "more" difficult
+**description**: `require` but with output flood to make logging "more" difficult.
 
 ---
 
@@ -241,7 +241,7 @@ axypeFlags.persistentLocalDestroyUponPing = true
 
 **type**: `function`
 
-**description**: mirror of altered `require` global, added to make Lua Sandbox scripts compatible with Axype
+**description**: mirror of altered `require` global, added to make Lua Sandbox scripts compatible with Axype.
 
 ---
 
@@ -249,7 +249,7 @@ axypeFlags.persistentLocalDestroyUponPing = true
 
 **type**: `function`
 
-**description**: mirror of `print`, added to make Lua Sandbox scripts compatible with Axype
+**description**: mirror of `print`, added to make Lua Sandbox scripts compatible with Axype.
 
 ---
 
@@ -257,7 +257,7 @@ axypeFlags.persistentLocalDestroyUponPing = true
 
 **type**: `function`
 
-**description**: mirror of `warn`, added to make Lua Sandbox scripts compatible with Axype
+**description**: mirror of `warn`, added to make Lua Sandbox scripts compatible with Axype.
 
 ---
 
