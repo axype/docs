@@ -32,7 +32,7 @@
 
 **example snippet**:
 
-```lua
+```luau
 NewLocalScript([==[
     print("Hello from LocalScript!")
     print("Arguments passed", ...) --> Arguments passed pizza water
@@ -111,6 +111,71 @@ check out the client environment [here](./client.md)
 storage.set("axyreLoaded", true)
 
 print(storage.get("axyreLoaded")) --> true
+```
+
+---
+
+### `axype`
+
+**type**: `table`
+
+**description**: table that includes useful information about the running paste.
+
+**example structure**:
+
+```luau
+{
+    version: string, -- "V3"
+    script: {
+        name: string, -- "test"
+        displayName: string, -- "@darkceius/test"
+        compiler: string -- "loadstring"
+    },
+    generator: { --| info about the user that generated this paste
+        date: isoDate, -- "2024-04-16T18:01:20.299Z"
+        name: string, -- "darkceius"
+    },
+    creator: {
+        name: string -- "darkceius"
+    },
+    ui: {
+      notification: function
+    }
+}
+```
+
+---
+
+### `axype.ui.notification` [nil](https://create.roblox.com/docs/luau/nil)
+
+**type**: `function (text: string, config: axypeNotificationConfig)`
+
+**description**: creates a notification using the axype ui
+
+**included types**:
+
+```luau
+type axypeNotificationConfig = {
+    icon: string?,
+    header: string?,
+    color: {
+        desc: Color3,
+        header: Color3,
+        close: Color3
+    }? | "red"? | "white"?,
+    sfx: {
+        -- {soundId, soundPitch, soundVolume}
+        show: any,
+        click: any,
+    }?,
+    lifetime: number?,
+}
+```
+
+**example snippet**:
+
+```luau
+axype.ui.notification("Hello World!", { header = "My Script" })
 ```
 
 ---
