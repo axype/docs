@@ -1,6 +1,6 @@
 # Axype Luau Documentation
 
-Axype and pasteloaders in general, are **NOT** exploits. They are "secure" server script loaders with versatile Lua APIs.
+Axype and pasteloaders in general, are **NOT** exploits. They are "secure" server-side script loaders.
 
 # Contexts:
 
